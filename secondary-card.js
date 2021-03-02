@@ -1,4 +1,3 @@
-
 import '@brightspace-ui-labs/accordion/accordion-collapse.js';
 import { css, html, LitElement } from 'lit-element/lit-element';
 import { labelStyles } from '@brightspace-ui/core/components/typography/styles.js';
@@ -44,32 +43,23 @@ class SecondaryCard extends LitElement {
 		return this.collapsable ? this._renderCollapsable() : this._renderDefault();
 	}
 
+	_renderCollapsable() {
+		return html`<d2l-labs-accordion-collapse flex header-border>
+		<span slot="header">
+		<h3>${this.titleText}</h3>
+		</span>
+		<span slot="summary">Test</span>
+		<span class="content">${this.bodyText}</span>
+		</d2l-labs-accordion-collapse>
+		`;
+	}
 	_renderDefault() {
 		return html`
 			<span slot="header">
-			<h3>
-			${this.titleText}
-			</h3>
+			<h3>${this.titleText}</h3>
 			<hr>
 			</span>
-			<span class="content">
-			${this.bodyText}
-			</span>`;
-	}
-
-	_renderCollapsable() {
-		return html`<d2l-labs-accordion-collapse flex>
-		<span slot="header">
-		<h3>
-		${this.titleText}
-		</h3>
-		<hr>
-		</span>
-		<span class="content">
-		${this.bodyText}
-		</span>
-		</d2l-labs-accordion-collapse>
-		`;
+			<span class="content">${this.bodyText}</span>`;
 	}
 }
 

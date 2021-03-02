@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7",
     "@brightspace-ui/stylelint-config": "^0.0.3",
+    "@brightspace-ui-labs/accordion": "^2",
     "@open-wc/testing": "^2",
     "@open-wc/testing-karma": "^4",
     "@webcomponents/webcomponentsjs": "^2",

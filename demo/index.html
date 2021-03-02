@@ -7,15 +7,33 @@
 			import '@brightspace-ui/core/components/demo/demo-page.js';
 			import '../secondary-card.js';
 		</script>
-		<title>SecondaryCard</title>
+		<title>Secondary Card</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
 	</head>
+	<style>
+		div {
+			width: 200px;
+			height: 300px;
+			background-color: rgb(139, 139, 139);
+			padding: 5px;
+		}
+	</style>
 	<body>
-		<d2l-demo-page page-title="SecondaryCard">
-			<h2>SecondaryCard</h2>
+		<d2l-demo-page page-title="Secondary Card">
+			<h2>Secondary Card in box</h2>
 			<d2l-demo-snippet>
-				<d2l-labs-secondary-card></d2l-labs-secondary-card>
+				<div>
+					<d2l-labs-secondary-card title-text="Example Title" body-text="Example Body Text" collapsable style="background-color: white;"></d2l-labs-secondary-card>
+				</div>
+			</d2l-demo-snippet>
+			<h2>Secondary Card Static</h2>
+			<d2l-demo-snippet>
+				<d2l-labs-secondary-card title-text="Example Title" body-text="Example Body Text"></d2l-labs-secondary-card>
+			</d2l-demo-snippet>
+			<h2>Secondary Card Collapsable</h2>
+			<d2l-demo-snippet>
+				<d2l-labs-secondary-card title-text="Example Title" body-text="Example Body Text" collapsable></d2l-labs-secondary-card>
 			</d2l-demo-snippet>
 		</d2l-demo-page>
 	</body>
