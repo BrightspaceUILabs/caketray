@@ -24,16 +24,23 @@
 			<h2>Secondary Card in box</h2>
 			<d2l-demo-snippet>
 				<div>
-					<d2l-labs-secondary-card title-text="Example Title" body-text="Example Body Text" collapsable style="background-color: white;"></d2l-labs-secondary-card>
+					<d2l-labs-secondary-card title-text="Example Title" summary-text="Summary goes here"
+						collapsable style="background-color: white;">
+						<p slot="card-content">This is what the card looks like in a secondary pane.</p>
+					</d2l-labs-secondary-card>
 				</div>
 			</d2l-demo-snippet>
 			<h2>Secondary Card Static</h2>
 			<d2l-demo-snippet>
-				<d2l-labs-secondary-card title-text="Example Title" body-text="Example Body Text"></d2l-labs-secondary-card>
+				<d2l-labs-secondary-card title-text="Example Title">
+					<p slot="card-content">Content on a static card is always shown.</p>
+				</d2l-labs-secondary-card>
 			</d2l-demo-snippet>
 			<h2>Secondary Card Collapsable</h2>
 			<d2l-demo-snippet>
-				<d2l-labs-secondary-card title-text="Example Title" body-text="Example Body Text" collapsable></d2l-labs-secondary-card>
+				<d2l-labs-secondary-card title-text="Example Title" summary-text="Summary is shown when closed" collapsable>
+					<p slot="card-content">Content on an accordion card is hidden until opened.</p>
+				</d2l-labs-secondary-card>
 			</d2l-demo-snippet>
 		</d2l-demo-page>
 	</body>

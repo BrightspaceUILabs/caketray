@@ -7,7 +7,7 @@ class SecondaryCard extends LitElement {
 	static get properties() {
 		return {
 			titleText: { type: String, attribute: 'title-text' },
-			bodyText: { type: String, attribute: 'body-text' },
+			summaryText: { type: String, attribute: 'summary-text' },
 			collapsable: { type: Boolean }
 		};
 	}
@@ -21,9 +21,9 @@ class SecondaryCard extends LitElement {
 				display: flex;
 				flex-direction: column;
 				background: var(--d2l-color-white);
-				border-radius: 8px;
-				margin-bottom: 10px;
-				padding: 20px;
+				border-radius: 0.5rem;
+				margin-bottom: 0.6rem;
+				padding: 1.3rem;
 				padding-top: 0;
 			}
 			.d2l-activity-editor-card {
@@ -46,20 +46,20 @@ class SecondaryCard extends LitElement {
 	_renderCollapsable() {
 		return html`<d2l-labs-accordion-collapse flex header-border>
 		<span slot="header">
-		<h3>${this.titleText}</h3>
+			<h3>${this.titleText}</h3>
 		</span>
-		<span slot="summary">Test</span>
-		<span class="content">${this.bodyText}</span>
+		<span slot="summary">${this.summaryText}</span>
+		<slot name="card-content"></slot>
 		</d2l-labs-accordion-collapse>
 		`;
 	}
 	_renderDefault() {
 		return html`
 			<span slot="header">
-			<h3>${this.titleText}</h3>
-			<hr>
+				<h3>${this.titleText}</h3>
+				<hr>
 			</span>
-			<span class="content">${this.bodyText}</span>`;
+			<slot name="card-content"></slot>`;
 	}
 }
 
