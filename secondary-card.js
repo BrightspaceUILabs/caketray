@@ -18,13 +18,13 @@ class SecondaryCard extends LitElement {
 				display: none;
 			}
 			:host {
-				display: flex;
-				flex-direction: column;
 				background: var(--d2l-color-white);
 				border-radius: 0.5rem;
+				display: flex;
+				flex-direction: column;
 				margin-bottom: 0.6rem;
-				padding: 1.3rem;
 				padding-top: 0;
+				padding: 1.3rem;
 			}
 			.d2l-activity-editor-card {
 				display: grid;
