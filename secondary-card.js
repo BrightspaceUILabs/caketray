@@ -23,8 +23,8 @@ class SecondaryCard extends LitElement {
 				display: flex;
 				flex-direction: column;
 				margin-bottom: 0.6rem;
-				padding-top: 0;
 				padding: 1.3rem;
+				padding-top: 0;
 			}
 			.d2l-activity-editor-card {
 				display: grid;
