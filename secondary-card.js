@@ -45,7 +45,7 @@ class SecondaryCard extends LitElement {
 
 	_renderCollapsable() {
 		return html`<d2l-labs-accordion-collapse flex header-border>
-		<span slot="header">
+		<span slot="header" aria-label="${this.titleText}">
 			<h3>${this.titleText}</h3>
 		</span>
 		<span slot="summary">${this.summaryText}</span>
@@ -55,7 +55,7 @@ class SecondaryCard extends LitElement {
 	}
 	_renderDefault() {
 		return html`
-			<span slot="header">
+			<span slot="header" aria-label="${this.titleText}">
 				<h3>${this.titleText}</h3>
 				<hr>
 			</span>
