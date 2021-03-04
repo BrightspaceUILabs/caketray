@@ -13,7 +13,7 @@
 > - [ ] [Accessibility tests](https://github.com/BrightspaceUI/guide/wiki/Testing#automated-accessibility-testing-with-axe)
 > - [ ] [Visual diff tests](https://github.com/BrightspaceUI/visual-diff)
 > - [ ] [Localization](https://github.com/BrightspaceUI/guide/wiki/Localization) with Serge (if applicable)
-> - [ ] Demo page
+> - [x] Demo page
 > - [ ] README documentation
 
 A card for use with the secondary pane in the primary-secondary template
@@ -32,14 +32,18 @@ npm install @brightspace-ui-labs/secondary-card
 <script type="module">
     import '@brightspace-ui-labs/secondary-card/secondary-card.js';
 </script>
-<d2l-labs-secondary-card>My element</d2l-labs-secondary-card>
+<d2l-labs-secondary-card title-text="This is a title">
+	<slot name="card-content">This is the contents of the card.</slot>
+</d2l-labs-secondary-card>
 ```
 
 **Properties:**
 
 | Property | Type | Description |
 |--|--|--|
-| | | |
+| title-text | String | text appears as the header of the component |
+| summary-text | String | text appears as summary when card is closed. No effect if component is not collapsable. |
+| collapsable | Boolean | when true, the card is collapsable using the d2l-labs-accordion |
 
 **Accessibility:**
 

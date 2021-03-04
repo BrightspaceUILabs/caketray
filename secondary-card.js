@@ -18,10 +18,10 @@ class SecondaryCard extends LitElement {
 				display: none;
 			}
 			:host {
-				display: flex;
-				flex-direction: column;
 				background: var(--d2l-color-white);
 				border-radius: 0.5rem;
+				display: flex;
+				flex-direction: column;
 				margin-bottom: 0.6rem;
 				padding: 1.3rem;
 				padding-top: 0;
@@ -46,7 +46,7 @@ class SecondaryCard extends LitElement {
 	_renderCollapsable() {
 		return html`<d2l-labs-accordion-collapse flex header-border>
 		<span slot="header">
-			<h3>${this.titleText}</h3>
+			<h3 aria-label="${this.titleText}">${this.titleText}</h3>
 		</span>
 		<span slot="summary">${this.summaryText}</span>
 		<slot name="card-content"></slot>
@@ -56,7 +56,7 @@ class SecondaryCard extends LitElement {
 	_renderDefault() {
 		return html`
 			<span slot="header">
-				<h3>${this.titleText}</h3>
+				<h3 aria-label="${this.titleText}">${this.titleText}</h3>
 				<hr>
 			</span>
 			<slot name="card-content"></slot>`;
