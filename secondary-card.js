@@ -36,6 +36,11 @@ class SecondaryCard extends LitElement {
 			::slotted([slot=content]) {
 				grid-row: content;
 			}
+			hr.d2l-split {
+				background-color: var(--d2l-color-corundum);
+				border: none;
+				height: 1px;
+			}
 		`];
 	}
 
@@ -57,7 +62,7 @@ class SecondaryCard extends LitElement {
 		return html`
 			<span slot="header">
 				<h3 aria-label="${this.titleText}">${this.titleText}</h3>
-				<hr>
+				<hr class="d2l-split">
 			</span>
 			<slot name="card-content"></slot>`;
 	}
