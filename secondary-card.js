@@ -39,7 +39,7 @@ class SecondaryCard extends LitElement {
 			hr.d2l-split {
 				background-color: var(--d2l-color-corundum);
 				border: none;
-				height: 1px;
+				height: 0.05rem;
 			}
 		`];
 	}
