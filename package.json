@@ -33,7 +33,7 @@
     "stylelint": "^13"
   },
   "files": [
-    "secondary-card.js"
+    "caketray.js"
   ],
   "publishConfig": {
     "access": "public"
