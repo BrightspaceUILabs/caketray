@@ -2,7 +2,7 @@ import '@brightspace-ui-labs/accordion/accordion-collapse.js';
 import { css, html, LitElement } from 'lit-element/lit-element';
 import { labelStyles } from '@brightspace-ui/core/components/typography/styles.js';
 
-class SecondaryCard extends LitElement {
+class Caketray extends LitElement {
 
 	static get properties() {
 		return {
@@ -63,4 +63,4 @@ class SecondaryCard extends LitElement {
 	}
 }
 
-customElements.define('d2l-labs-secondary-card', SecondaryCard);
+customElements.define('d2l-labs-caketray', Caketray);

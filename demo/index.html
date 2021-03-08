@@ -5,9 +5,9 @@
 		<script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
 		<script type="module">
 			import '@brightspace-ui/core/components/demo/demo-page.js';
-			import '../secondary-card.js';
+			import '../caketray.js';
 		</script>
-		<title>Secondary Card</title>
+		<title>Caketray</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
 	</head>
@@ -20,27 +20,27 @@
 		}
 	</style>
 	<body>
-		<d2l-demo-page page-title="Secondary Card">
-			<h2>Secondary Card in box</h2>
+		<d2l-demo-page page-title="Caketray">
+			<h2>Caketray in box</h2>
 			<d2l-demo-snippet>
 				<div>
-					<d2l-labs-secondary-card title-text="Example Title" summary-text="Summary goes here"
+					<d2l-labs-caketray title-text="Example Title" summary-text="Summary goes here"
 						collapsable style="background-color: white;">
 						<p slot="card-content">This is what the card looks like in a secondary pane.</p>
-					</d2l-labs-secondary-card>
+					</d2l-labs-caketray>
 				</div>
 			</d2l-demo-snippet>
-			<h2>Secondary Card Static</h2>
+			<h2>Caketray Static</h2>
 			<d2l-demo-snippet>
-				<d2l-labs-secondary-card title-text="Example Title">
+				<d2l-labs-caketray title-text="Example Title">
 					<p slot="card-content">Content on a static card is always shown.</p>
-				</d2l-labs-secondary-card>
+				</d2l-labs-caketray>
 			</d2l-demo-snippet>
-			<h2>Secondary Card Collapsable</h2>
+			<h2>Caketray Collapsable</h2>
 			<d2l-demo-snippet>
-				<d2l-labs-secondary-card title-text="Example Title" summary-text="Summary is shown when closed" collapsable>
+				<d2l-labs-caketray title-text="Example Title" summary-text="Summary is shown when closed" collapsable>
 					<p slot="card-content">Content on an accordion card is hidden until opened.</p>
-				</d2l-labs-secondary-card>
+				</d2l-labs-caketray>
 			</d2l-demo-snippet>
 		</d2l-demo-page>
 	</body>
